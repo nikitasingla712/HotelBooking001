@@ -1,0 +1,14 @@
+.citiesview {
+    margin-left: 5%;
+    text-align: center;
+}
+.citiesview img {
+    width: 285px;
+    padding: 5px;
+    filter: grayscale(40%);
+    transition: 1s;
+}
+.citiesview img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}

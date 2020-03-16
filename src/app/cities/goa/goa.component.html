@@ -1,0 +1,130 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<app-header></app-header>
+<script>
+    var list = document.querySelectorAll(".item a");
+
+for (var i = 0; i < list.length; i++) {
+	var url = list[i].children[0].getAttribute("src");
+  list[i].style.backgroundImage="url('" + url + "')";
+}</script>
+<header>
+<div id=city>
+<h1>GOA</h1>
+<ul class="container">
+    <li class="item"><a href="#0" title="Chapora River"><img src="assets/ChaporaRiver.jpg" alt="01"></a></li>
+    <li class="item"><a href="#0" title="Mahadev Temple"><img src="assets/MahadevTemple.jpg" alt="02"></a></li>
+	<li class="item"><a href="#0" title="Palolem Beach"><img src="assets/PalolemBeach.jpg" alt="03"></a></li>
+	<li class="item"><a href="#0" title="Panjim"><img src="assets/Panjim.jpg" alt="04"></a></li>
+	<li class="item"><a href="#0" title="Saint Cajetan"><img src="assets/SaintCajetan.jpg" alt="05"></a></li>
+</ul>
+<p>Goa is a state on the southwestern coast of India within the region known as the Konkan, and geographically separated from the Deccan highlands by the Western Ghats. It is surrounded by the Indian states of Maharashtra to the north and Karnataka to the east and south, with the Arabian Sea forming its western coast. It is India's smallest state by area and the fourth-smallest by population.
+  Panaji is the state's capital, while Vasco da Gama is its largest city. The historic city of Margao still exhibits the cultural influence of the Portuguese, who first landed in the early 16th century as merchants and conquered it soon thereafter. Goa was a former state of the Portuguese Empire.
+</p></div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="Magnum Resorts Candolim">
+                    <img src="assets/GoaH.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>Magnum Resorts Candolim</h3>
+                  <h5>Location:</h5>
+                <p>Opp Primary Health Centre, Candolim, Goa</p>
+                <h5>Price:</h5>
+                <p>$1326 <i id=fullprice>$2210</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="Orritel Village">
+                      <img src="assets/GoaH1.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>Orritel Village</h3>
+                    <h5>Location:</h5>
+                  <p>Near Vagator Beach, Goa</p>
+                  <h5>Price:</h5>
+                  <p>$1323 <i id=fullprice>$2528</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="Srinivas Residency">
+                          <img src="assets/GoaH2.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3>Srinivas Residency
+                          </h3>
+                        <h5>Location:</h5>
+                      <p>Near Margao Railway Station, Margao, Goa</p>
+                      <h5>Price:</h5>
+                      <p>$1014 <i id=fullprice>$1893</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="City Xpress Hotel">
+                    <img src="assets/GoaH3.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>City Xpress Hotel</h3>
+                  <h5>Location:</h5>
+                <p>Dr. Dada Vaidhya Road, Panjim,Goa</p>
+                <h5>Price:</h5>
+                <p>$1435 <i id=fullprice>$2509</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="Keegan Guest House">
+                      <img src="assets/GoaH4.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>Keegan Guest House</h3>
+                    <h5>Location:</h5>
+                  <p>Near Arossim Utorda Beach Road, Goa</p>
+                  <h5>Price:</h5>
+                  <p>$901 <i id=fullprice>$1402</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="Horizon Shalom Porvorim">
+                          <img src="assets/GoaH5.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3>Horizon Shalom Porvorim</h3>
+                        <h5>Location:</h5>
+                      <p>
+                        Near Mandovi Clinic, Porvorim, Goa
+                        </p>
+                      <h5>Price:</h5>
+                      <p>$888 <i id=fullprice>$1480</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+</header>
+<app-footer></app-footer>

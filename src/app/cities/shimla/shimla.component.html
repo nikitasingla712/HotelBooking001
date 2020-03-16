@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<app-header></app-header>
+<script>
+    var list = document.querySelectorAll(".item a");
+
+for (var i = 0; i < list.length; i++) {
+	var url = list[i].children[0].getAttribute("src");
+  list[i].style.backgroundImage="url('" + url + "')";
+}</script>
+<header>
+<div id=city>
+<h1>SHIMLA</h1>
+<ul class="container">
+    <li class="item"><a href="#0" title="Christ Church"><img src="assets/ChristChurch.jpg" alt="01"></a></li>
+    <li class="item"><a href="#0" title="Crow Brough Rest House"><img src="assets/CrowBroughRestHouse.jpg" alt="02"></a></li>
+	<li class="item"><a href="#0" title="Indian Institute of Advanced Study"><img src="assets/IndianInstituteofAdvancedStudy.jpg" alt="03"></a></li>
+	<li class="item"><a href="#0" title="Kalka Shimla Railway Route"><img src="assets/KalkaShimlaRailwayRoute.jpeg" alt="04"></a></li>
+	<li class="item"><a href="#0" title="Town Hall"><img src="assets/TownHall.JPG" alt="05"></a></li>
+</ul>
+<p>Shimla, also known as Simla, is the capital and the largest city of the Indian state of Himachal Pradesh. In 1864, Shimla was declared as the summer capital of British India, succeeding Murree, northeast of Rawalpindi. After independence, the city became the capital of Punjab and was later made the capital of Himachal Pradesh. It is the principal commercial, cultural and educational centre of the state.</p>
+<p> Shimla is home to a number of buildings that are styled in the Tudorbethan and neo-Gothic architectures dating from the colonial era, as well as multiple temples and churches. The colonial architecture and churches, the temples and the natural environment of the city attracts tourists. Attractions include the Viceregal Lodge, the Christ Church, the Jakhoo Temple, the Mall Road, the Ridge and Annadale which together form the city centre. The Kalka–Shimla Railway line built by the British, a UNESCO World Heritage Site, is also a major tourist attraction. Owing to its steep terrain, Shimla hosts the mountain biking race MTB Himalaya, which started in 2005 and is regarded as the biggest event of its kind in South Asia. Shimla also has the largest natural ice skating rink in South Asia. Apart from being a tourism centre, the city is also an educational hub with a number of colleges and research institutions.
+</p></div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="Vatika Resort">
+                    <img src="assets/ShimlaH.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>Vatika Resort
+                    </h3>
+                  <h5>Location:</h5>
+                <p>Near Shoghi, Shimla</p>
+                <h5>Price:</h5>
+                <p>$1740 <i id=fullprice>$2900</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="Elegant Stay Ghora Chowki">
+                      <img src="assets/ShimlaH1.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>Elegant Stay Ghora Chowki</h3>
+                    <h5>Location:</h5>
+                  <p>Ghora Chowki, Kachi Ghatti, Shimla</p>
+                  <h5>Price:</h5>
+                  <p>$1014 <i id=fullprice>$1690</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="Indraprasth Residency">
+                          <img src="assets/ShimlaH2.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3> Hotel Shubham
+                          </h3>
+                        <h5>Location:</h5>
+                      <p>The Mall Road, Shimla</p>
+                      <h5>Price:</h5>
+                      <p>$2001 <i id=fullprice>$3337</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="Studio Rooms">
+                    <img src="assets/ShimlaH3.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>Studio Rooms</h3>
+                  <h5>Location:</h5>
+                <p>Kanlog Bus Stand, Kanlog, Shimla</p>
+                <h5>Price:</h5>
+                <p>$1014 <i id=fullprice>$2081</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="Hotel Atithi Jakhu Ropeway">
+                      <img src="assets/ShimlaH4.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>Hotel Atithi Jakhu Ropeway</h3>
+                    <h5>Location:</h5>
+                  <p>Near Jakhoo Ropeway, Bemloi, Shimla</p>
+                  <h5>Price:</h5>
+                  <p>$1692 <i id=fullprice>$2820</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="Hotel Aangan Regency">
+                          <img src="assets/ShimlaH5.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3>Hotel Aangan Regency
+                          </h3>
+                        <h5>Location:</h5>
+                      <p>
+                        Near ISBT Shimla, Shimla
+                        </p>
+                      <h5>Price:</h5>
+                      <p>$2420 <i id=fullprice>$4033</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+</header>
+<app-footer></app-footer>
+

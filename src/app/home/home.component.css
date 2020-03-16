@@ -1,0 +1,56 @@
+#t
+{
+    margin-top: -3%;
+    margin-left: 83%;
+}
+#hotelSearch
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+    background-color: white; 
+}
+#travelGuide
+{
+    background-color: hsla(30, 80%, 90%, .5);
+    color:black;
+    text-align: center;
+}
+#date
+{
+    margin-bottom: 1%;
+    background-color: hsla(30, 80%, 90%, .5);
+}
+
+
+#date .container div {
+    margin: 1em 0;
+}
+
+
+#date input {
+    width: none;
+    padding: none;
+    font-size: none;
+    font-family: Consolas, monospace;
+}
+
+#date .altfield {
+    margin-left: 1em;
+    background-color: #efefef;
+    padding:none;
+    color: #c00;
+    border: none;
+}
+
+#date3
+{
+    margin-top: 0%;
+    margin-left: 43%;
+}
+#date4
+{
+    margin-top: 0%;
+    margin-left: 3%;
+    margin-bottom: -3%;
+    margin-right: 0%;
+}

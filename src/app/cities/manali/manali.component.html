@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<app-header></app-header>
+<script>
+    var list = document.querySelectorAll(".item a");
+
+for (var i = 0; i < list.length; i++) {
+	var url = list[i].children[0].getAttribute("src");
+  list[i].style.backgroundImage="url('" + url + "')";
+}</script>
+<header>
+<div id=city>
+<h1>MANALI</h1>
+<ul class="container">
+    <li class="item"><a href="#0" title="Hadimba Devi Mandir"><img src="assets/HadimbaDeviMandir.jpg" alt="01"></a></li>
+    <li class="item"><a href="#0" title="Himalayan Mountains"><img src="assets/HimalayanMountains.jpg" alt="02"></a></li>
+	<li class="item"><a href="#0" title="Mango Hotel"><img src="assets/MangoHotel.jpg" alt="03"></a></li>
+	<li class="item"><a href="#0" title="Paragaliding"><img src="assets/Paragaliding.jpg" alt="04"></a></li>
+	<li class="item"><a href="#0" title="Snowfall"><img src="assets/Snowfall.jpg" alt="05"></a></li>
+</ul>
+<p>Manali is a resort town nestled in the mountains of the Indian state of Himachal Pradesh near the northern end of the Kullu Valley in the Beas River Valley. It is located in the Kullu district, about 270 km (168 mi) north of the state capital, Shimla, 309 km (192 miles) north east of Chandigarh and 544 km (338 miles) northeast of Delhi, the national capital. The small town, with a population of 8,096, is the beginning of an ancient trade route to Ladakh and from there over the Karakoram Pass on to Yarkand and Khotan in the Tarim Basin. It is a popular tourist destination and serves as the gateway to Lahaul and Spiti district as well as Leh.
+</p></div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="Hill View Studio Stay">
+                    <img src="assets/ManaliH.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>Hill View Studio Stay</h3>
+                  <h5>Location:</h5>
+                <p>Kanyal Rd, Manali</p>
+                <h5>Price:</h5>
+                <p>$764 <i id=fullprice>$1273</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="Hotel Vikrant">
+                      <img src="assets/ManaliH1.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>Hotel Vikrant
+                      </h3>
+                    <h5>Location:</h5>
+                  <p>Near Mall Road, Manali</p>
+                  <h5>Price:</h5>
+                  <p>$1014 <i id=fullprice>$1690</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="Hotel Devallya">
+                          <img src="assets/ManaliH2.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3> Hotel Devallya</h3>
+                        <h5>Location:</h5>
+                      <p>Near Tibetian Monestry, Manali</p>
+                      <h5>Price:</h5>
+                      <p>$904 <i id=fullprice>$1547</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="Hotel Krishna">
+                    <img src="assets/ManaliH3.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>Hotel Krishna</h3>
+                  <h5>Location:</h5>
+                <p>
+                  Opposite Bran Government School, Manali</p>
+                <h5>Price:</h5>
+                <p>$1374 <i id=fullprice>$2290</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="Hotel Golden Meadows">
+                      <img src="assets/ManaliH4.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>Hotel Golden Meadows
+                      </h3>
+                    <h5>Location:</h5>
+                  <p>Naggar Road, Manali</p>
+                  <h5>Price:</h5>
+                  <p>$894 <i id=fullprice>$2409</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="Tara Guest House">
+                          <img src="assets/ManaliH5.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3>Tara Guest House
+                          </h3>
+                        <h5>Location:</h5>
+                      <p>
+                        Near Mall Road, Manali
+                        </p>
+                      <h5>Price:</h5>
+                      <p>$958 <i id=fullprice>$1597</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+</header>
+<app-footer></app-footer>
+

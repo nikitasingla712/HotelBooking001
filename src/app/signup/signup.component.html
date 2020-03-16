@@ -1,0 +1,78 @@
+<app-header></app-header>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!-- Displaying Message in the HTML -->
+<header [ngStyle]="{'background': 'url(assets/hotel3.jpg)'}">
+    <div style="text-align: center">
+        <h1>{{message}}</h1>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+                    <h3 id=legend class="text-center">SignUp Information</h3>
+
+                    <div class="form-group">
+                        <label for="Name"><span class="req">* </span> First Name: <small>This will be your login First
+                                Name</small> </label>
+                        <input required type="text" [(ngModel)]="user.firstName" [ngModelOptions]="{standalone: true}"
+                            class="form-control phone" maxlength="28" placeholder="Enter your Fist Name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstname"><span class="req">* </span> Last Name: <small>This will be your login Last Name</small> </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.lastName" [ngModelOptions]="{standalone: true}" required
+                            placeholder="Enter valid Last Name" />
+                        <div id="errFirst"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname"><span class="req">* </span> UID : <small>This is for Data Verification</small> </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.address" [ngModelOptions]="{standalone: true}"
+                            placeholder="What is your AadharCard Number?" required />
+                        <div id="errLast"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Phone"><span class="req">* </span> Phone : <small>This is for Contact Verification</small> </label>
+                        <input class="form-control" type="text" [(ngModel)]="user.phone" [ngModelOptions]="{standalone: true}"
+                            placeholder="Enter Your Phone Number" required />
+                        <div id="errLast"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="E-mail"><span class="req">* </span> E-mail : <small>This is for contact verification</small> </label>
+                        <input class="form-control" type="email" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}"
+                            placeholder="Enter your email id" required />
+                        <div id="errLast"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Create Password"><span class="req">* </span> Create Password : <small>atleast 8 characters</small> </label>
+                        <input class="form-control" type="password" [(ngModel)]="user.pass" [ngModelOptions]="{standalone: true}"
+                            placeholder="Create Your Password" minlength="8" maxlength="15" required />
+                        <div id="errLast"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Confirm Password"><span class="req">* </span> Confirm Password : <small>should be same as above</small> </label>
+                        <input class="form-control" type="password" [(ngModel)]="user.passc" [ngModelOptions]="{standalone: true}"
+                            placeholder="Confirm Password" minlength="8" maxlength="15" required />
+                        <div id="errLast"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Register" (click)="registerProcess()">
+                    </div>
+                </fieldset>
+            </form><!-- ends register form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+
+    </div>
+</div>
+</header>
+<app-footer></app-footer>

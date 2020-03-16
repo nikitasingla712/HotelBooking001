@@ -1,0 +1,19 @@
+#start
+{
+    font-size:60 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:Red;
+    background-color: hsla(30, 80%, 90%, .5);
+}
+#rightstart
+{
+ margin-top: -2%;
+ margin-left: 64%;
+}
+#cities
+{
+    font-size:60 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    background-color: red; 
+}

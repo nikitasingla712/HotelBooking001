@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<app-header></app-header>
+<script>
+    var list = document.querySelectorAll(".item a");
+
+for (var i = 0; i < list.length; i++) {
+	var url = list[i].children[0].getAttribute("src");
+  list[i].style.backgroundImage="url('" + url + "')";
+}</script>
+<header>
+<div id=city>
+<h1>AGRA</h1>
+<ul class="container">
+    <li class="item"><a href="#0" title="Taj Mahal"><img src="assets/agra.jpg" alt="01"></a></li>
+    <li class="item"><a href="#0" title="Agra Fort"><img src="assets/agraFort.jpg" alt="02"></a></li>
+	<li class="item"><a href="#0" title="Aram Bagh"><img src="assets/AramBagh.jpg" alt="03"></a></li>
+	<li class="item"><a href="#0" title="Mariam Tomb"><img src="assets/MariamTomb.jpg" alt="04"></a></li>
+	<li class="item"><a href="#0" title="Buland Drwaza"><img src="assets/BulandDrwaza.webp" alt="05"></a></li>
+</ul>
+<p>Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh. It is 206 kilometres (128 mi) south of the national capital New Delhi. Agra is the fourth-most populous city in Uttar Pradesh and 24th in India.</p>
+
+<p>    Agra is a major tourist destination because of its many Mughal-era buildings, most notably the Taj Mahal, Agra Fort and Fatehpur Sikri, all of which are UNESCO World Heritage Sites. Agra is included on the Golden Triangle tourist circuit, along with Delhi and Jaipur; and the Uttar Pradesh Heritage Arc, a tourist circuit of Uttar Pradesh, along with Lucknow and Varanasi. Agra is in the Braj cultural region.</p>
+</div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="Hotel D' Season">
+                    <img src="assets/agrahotel1.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>Hotel D' Season</h3>
+                  <h5>Location:</h5>
+                <p>Shaheed Nagar, Agra.</p>
+                <h5>Price:</h5>
+                <p>$1216 <i id=fullprice>$2096</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="Hotel Areeba Castle ">
+                      <img src="assets/agrahotel2.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>Hotel Areeba Castle </h3>
+                    <h5>Location:</h5>
+                  <p>Fatehabad Road, Agra</p>
+                  <h5>Price:</h5>
+                  <p>$889 <i id=fullprice>$1246</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="Indraprasth Residency">
+                          <img src="assets/agrahotel.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3>Indraprasth Residency</h3>
+                        <h5>Location:</h5>
+                      <p>Near Agra Cantonment Railway Station.</p>
+                      <h5>Price:</h5>
+                      <p>$799 <i id=fullprice>$1331</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+<div id=hotel>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+              <a title="City Square And Suites">
+                    <img src="assets/agrahotel3.jpg" alt="1" width="1100" height="500">
+                <div class="caption">
+                  <h3>City Square And Suites</h3>
+                  <h5>Location:</h5>
+                <p>Fatehabad Road, Agra</p>
+                <h5>Price:</h5>
+                <p>$1014 <i id=fullprice>$1735</i></p>
+                <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+              </div>
+              </a>
+          </div>
+        </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+                <a title="The Taj Residency">
+                      <img src="assets/agrahotel4.jpg" alt="1" width="1100" height="500">
+                  <div class="caption">
+                    <h3>The Taj Residency</h3>
+                    <h5>Location:</h5>
+                  <p>Near Taj Mahal, Agra</p>
+                  <h5>Price:</h5>
+                  <p>$1605 <i id=fullprice>$2675</i></p>
+                  <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                </div>
+                </a>
+            </div>
+    </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <a title="P S Villa">
+                          <img src="assets/agrahotel5.jpg" alt="1" width="1100" height="500">
+                      <div class="caption">
+                        <h3>P S Villa</h3>
+                        <h5>Location:</h5>
+                      <p>Taj Nagari Phase-2, Agra</p>
+                      <h5>Price:</h5>
+                      <p>$842 <i id=fullprice>$1301</i></p>
+                      <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+                    </div>
+                    </a>
+                </div>
+    </div>
+        </div>
+         
+</div>
+</header>
+<app-footer></app-footer>

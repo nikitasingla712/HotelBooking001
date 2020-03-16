@@ -1,0 +1,118 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+    yepnope({ // or Modernizr.load
+    test: Modernizr.inputtypes.date,
+    nope: [
+        'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js',
+
+        'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.structure.min.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.theme.min.css',
+
+    ],
+
+    callback:function (url) {
+
+        if(url === 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js') {
+
+            var idx=0;
+
+            $('input[type="date"]').each( function() {
+                var _this=$(this),
+                    prefix='alt'+ String(idx++) + '_',
+                    _val=_this.val();
+
+                _this
+                .attr('placeholder', 'gg/mm/aaaa')
+                .attr('autocomplete', 'off')
+                .prop('readonly', true)
+                .after('<input type="text" class="altfield" id="' + prefix + _this.attr('id')  + '" name="' + _this.attr('name') + '" value="' + _val + '">')
+                .removeAttr('name')
+                .val('')
+                .datepicker({
+                    altField: '#'+ prefix + _this.attr('id'),
+                    dateFormat: 'dd/mm/yy',
+                    altFormat: 'yy-mm-dd'
+                });
+
+                if(_val) {
+                    _this.datepicker('setDate', $.datepicker.parseDate('yy-mm-dd', _val) );
+                };
+            });
+
+
+            // min attribute
+            $('input[type="date"][min]').each(function() {
+                var _this=$(this);
+                _this.datepicker( "option", "minDate", $.datepicker.parseDate('yy-mm-dd', _this.attr('min')));
+            });
+
+            // max attribute
+            $('input[type="date"][max]').each(function() {
+                var _this=$(this);
+                _this.datepicker( "option", "maxDate", $.datepicker.parseDate('yy-mm-dd', _this.attr('max')));
+            });
+        }
+    }
+}); // end Modernizr.load
+</script>
+<app-header></app-header>
+<div id=hotelSearch>
+<h1><marquee>**Enjoy a Luxury Experience**</marquee></h1>
+<div id =date>
+        <div id=date4>
+            <label for="date1">From</label>
+            <input id="date1" type="date" name="date1" value="">
+        </div>
+      
+        <div id="date3">
+            <label for="date2">to</label>
+            <input id="date2" type="date" name="date2" value="">
+        </div>
+      
+   
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="input-group">
+            <input id=search-input class="form-control border-secondary py-2" type="search" placeholder="Search Location" >{{value}}
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" (click)="f1()">
+                    Search
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id=travelGuide>
+    <h2>Travel Guide</h2>
+    <div id=t>
+    <button mat-button routerLink="/cities">Show more</button></div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3 >Goa</h3>
+            <img  height="50%" width=100% src="assets/goa.jpg">
+            <p>Goa, when seen on the maps, might look like a tiny dot, but once you visit here you realize that it is much larger than just a small city. Goa is famous for its beaches and party life but there are a few who loves to visit Goa for its serenity and calm environment. This state has historic temples and some of the most famous
+                <button mat-button routerLink="/goa">Readmore</button>
+            </p>
+          </div>
+          <div class="col-sm">
+            <h3 >Delhi</h3>
+            <img  height="50%" width=100% src="assets/delhi.jpg">
+            <p>It was the famous Urdu poet Ghalib who said, “I asked my soul, ‘What is Delhi?’ It replied: ‘The world is the body, Delhi its soul” Delhi is a melting pot of cultures that has been shaped by the people and cultures that lived here over hundreds of years. To discover the soul of Delhi, we will have to look at the structures and and the 
+                <button mat-button routerLink="/delhi">Readmore</button>
+            </p>
+          </div>
+          <div class="col-sm">
+            <h3 >Manali</h3>
+            <img  height="50%" width=100% src="assets/manali.webp">
+             <p>Manali, is a place that has so much to offer in terms of its location, food, gorgeous sightseeing, and incredible activities. Of course, Manali is a place that goes through a complete four season change all year round. All the dominant seasons of Manali have their own charm each year but summer is probably the best time to visit Manali.
+                <button mat-button routerLink="/manali">Readmore</button>
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+<app-footer></app-footer>
