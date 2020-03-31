@@ -26,8 +26,11 @@ import { KeralaComponent } from './cities/kerala/kerala.component';
 import { AllcitiesComponent } from './allcities/allcities.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { UserRegistrationService } from './user-registration.service';
+import { PaymentComponent } from './payment/payment.component';
+import { AuthenticateService } from './authenticate.service';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { UserRegistrationService } from './user-registration.service';
     AgraComponent,
     KeralaComponent,
     AllcitiesComponent,
-    HeaderComponent
+    HeaderComponent,
+    PaymentComponent
   ],
   imports: [
     HttpClientModule,
@@ -59,9 +63,12 @@ import { UserRegistrationService } from './user-registration.service';
     BrowserAnimationsModule,
     MatMenuModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    
   ],
-  providers: [UserRegistrationService],
+  providers: [UserRegistrationService,
+  AuthenticateService,
+AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

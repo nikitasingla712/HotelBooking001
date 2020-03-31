@@ -1,3 +1,31 @@
 <app-header></app-header>
-<header [ngStyle]="{'background': 'url(assets/hotel4.jpg)'}"></header>
+<header [ngStyle]="{'background': 'url(assets/hotel4.jpg)'}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <fieldset>
+                        <h3 id=legend class="text-center">SignUp Information</h3>
+                        <div class="form-group">
+                            <label for="E-mail"><span class="req">* </span> E-mail : </label>
+                            <input class="form-control" type="email" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}"
+                                placeholder="Enter your email id" required />
+                            <div id="errLast"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Create Password"><span class="req">* </span> Password :</label>
+                            <input class="form-control" type="password" [(ngModel)]="user.pass" [ngModelOptions]="{standalone: true}"
+                                placeholder="Enter Your Account Password" minlength="8" maxlength="15" required />
+                            <div id="errLast"></div>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit" name="submit_reg" value="Register"> <!-- (click)="login()" -->
+                        </div>
+                        </fieldset>
+                        </form>
+</div>
+</div>
+</div>
+                    </header>
+
 <app-footer></app-footer>

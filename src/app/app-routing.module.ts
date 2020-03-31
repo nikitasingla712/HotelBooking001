@@ -13,11 +13,12 @@ import { KeralaComponent } from './cities/kerala/kerala.component';
 import { ManaliComponent } from './cities/manali/manali.component';
 import { MumbaiComponent } from './cities/mumbai/mumbai.component';
 import { ShimlaComponent } from './cities/shimla/shimla.component';
-
+import { PaymentComponent } from './payment/payment.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/home'},
   {path: 'home', component: HomeComponent},
+  {path: 'payment', component: PaymentComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: SignupComponent},
   {path: 'cities', component: AllcitiesComponent},

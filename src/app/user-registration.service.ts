@@ -11,7 +11,7 @@ export class UserRegistrationService {
 
   //Does a API Call using POST Http Method
   public doRegistration(user: User) {
-    return this.http.post("http://localhost:8080/create", user, {responseType: 'text' as 'json'});
+    return this.http.post("http://localhost:8181/create", user, {responseType: 'text' as 'json'});
   }
 
   //Calling a API using GET Http Request
